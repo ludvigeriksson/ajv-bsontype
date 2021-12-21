@@ -95,9 +95,10 @@ module.exports = function(ajv) {
     return passed;
   };
 
-  ajv.addKeyword('bsonType', {
+  ajv.addKeyword({
+    keyword: 'bsonType',
     errors: true,
-    validate
+    validate,
   });
 
 };
